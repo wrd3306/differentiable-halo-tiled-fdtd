@@ -1,0 +1,36 @@
+{
+  "description": "Consolidated real full-wave results for the 28-variable x-invariant GRIN broadband AR. Values are transcribed from the non-autograd verification logs (grinlp_verify, grin_fine, grin_fab); no fitted, surrogate, or interpolated data.",
+  "freqs_ghz": [8, 9, 10, 11, 12],
+  "n_variables": 28,
+  "baseline_full_slab_er1p45": {
+    "record_ns": 6.0,
+    "per_freq_S11": [0.229, 0.228, 0.184, 0.240, 0.202],
+    "max_S11": 0.240
+  },
+  "grin_0p5mm": {
+    "grid_mm": 0.5,
+    "record_ns": 12.0,
+    "engine": "non-autograd production (engine3d + fdtd_gpu.step)",
+    "per_freq_S11": [0.1069, 0.1108, 0.1164, 0.0653, 0.0788],
+    "max_S11": 0.1164,
+    "mean_S11": 0.0956
+  },
+  "grin_0p25mm": {
+    "grid_mm": 0.25,
+    "record_ns": 12.0,
+    "engine": "non-autograd production (engine3d + fdtd_gpu.step)",
+    "per_freq_S11": [0.0681, 0.0851, 0.0935, 0.0650, 0.1120],
+    "max_S11": 0.1120,
+    "mean_S11": 0.0847
+  },
+  "multistart_0p5mm_best_max_S11": [0.1091, 0.11, 0.1222],
+  "fabrication_0p5mm": {
+    "record_ns": 10.0,
+    "nominal": 0.1175,
+    "er_plus_5pct": 0.1153,
+    "er_minus_5pct": 0.119,
+    "er_noise_5pct": 0.1194,
+    "boundary_plus_1voxel": 0.1175,
+    "boundary_minus_1voxel": 0.1348
+  }
+}

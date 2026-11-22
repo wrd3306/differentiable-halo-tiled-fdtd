@@ -1,0 +1,86 @@
+{
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "gpu_rows": [
+    {
+      "grid": 32,
+      "cells": 32768,
+      "steps": 60,
+      "time_s": 0.033,
+      "tcups": 0.0001,
+      "naive_bw_est_gbs": 10.5,
+      "fused_floor_bw_gbs": 4.8
+    },
+    {
+      "grid": 48,
+      "cells": 110592,
+      "steps": 60,
+      "time_s": 0.0957,
+      "tcups": 0.0001,
+      "naive_bw_est_gbs": 12.2,
+      "fused_floor_bw_gbs": 5.5
+    },
+    {
+      "grid": 64,
+      "cells": 262144,
+      "steps": 60,
+      "time_s": 0.05,
+      "tcups": 0.0003,
+      "naive_bw_est_gbs": 55.4,
+      "fused_floor_bw_gbs": 25.2
+    },
+    {
+      "grid": 96,
+      "cells": 884736,
+      "steps": 60,
+      "time_s": 0.0956,
+      "tcups": 0.0006,
+      "naive_bw_est_gbs": 97.7,
+      "fused_floor_bw_gbs": 44.4
+    },
+    {
+      "grid": 128,
+      "cells": 2097152,
+      "steps": 60,
+      "time_s": 0.1694,
+      "tcups": 0.0007,
+      "naive_bw_est_gbs": 130.8,
+      "fused_floor_bw_gbs": 59.4
+    },
+    {
+      "grid": 160,
+      "cells": 4096000,
+      "steps": 60,
+      "time_s": 0.4508,
+      "tcups": 0.0005,
+      "naive_bw_est_gbs": 96.0,
+      "fused_floor_bw_gbs": 43.6
+    },
+    {
+      "grid": 192,
+      "cells": 7077888,
+      "steps": 60,
+      "time_s": 0.9992,
+      "tcups": 0.0004,
+      "naive_bw_est_gbs": 74.8,
+      "fused_floor_bw_gbs": 34.0
+    },
+    {
+      "grid": 224,
+      "cells": 11239424,
+      "steps": 60,
+      "time_s": 1.6025,
+      "tcups": 0.0004,
+      "naive_bw_est_gbs": 74.1,
+      "fused_floor_bw_gbs": 33.7
+    }
+  ],
+  "production": {
+    "cells": 37950,
+    "steps": 100,
+    "gpu_time_s": 0.0688,
+    "cpu_time_s": 0.0829,
+    "speedup": 1.21,
+    "gpu_tcups": 6e-05,
+    "cpu_tcups": 5e-05
+  }
+}

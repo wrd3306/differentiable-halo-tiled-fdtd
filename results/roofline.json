@@ -1,0 +1,12 @@
+{
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "compute_capability": "12.0",
+  "sms": 36,
+  "total_mem_gb": 17.1,
+  "n_elem": 20000000,
+  "copy_time_s": 0.000437,
+  "copy_bw_gbs": 366.05,
+  "triad_time_s": 0.000633,
+  "triad_bw_gbs": 379.39,
+  "peak_achieved_bw_gbs": 379.39
+}

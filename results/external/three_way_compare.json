@@ -1,0 +1,171 @@
+{
+  "grid_mm": 0.5,
+  "n_cells": 230400,
+  "frequency_hz": 10000000000.0,
+  "analytic_full_slab": {
+    "S11": 0.04448,
+    "S21": 0.99901,
+    "energy": 1.0
+  },
+  "devices": [
+    {
+      "name": "full_slab",
+      "self_S11": 0.12055474155614022,
+      "self_S21": 0.9900145573500128,
+      "self_energy": 0.9946622694766095,
+      "meep_S11": 0.22595925412111648,
+      "meep_S21": 0.9741660521817298,
+      "meep_energy": 1.0000570817463081,
+      "openems_S11": 0.04913785810452893,
+      "openems_S21": 0.9987883071175748,
+      "openems_energy": 0.9999926115338917
+    },
+    {
+      "name": "side_slab_left",
+      "self_S11": 0.8332254101232739,
+      "self_S21": 0.5570387130349763,
+      "self_energy": 1.0045567118947607,
+      "meep_S11": 0.5597140223490741,
+      "meep_S21": 0.8287171994860604,
+      "meep_energy": 1.0000519835381985,
+      "openems_S11": 0.9860588730414332,
+      "openems_S21": 0.16372241623555175,
+      "openems_energy": 0.9991171306817486
+    },
+    {
+      "name": "side_slab_right",
+      "self_S11": 0.8358305911498982,
+      "self_S21": 0.5528302084594082,
+      "self_energy": 1.0042340164872612,
+      "meep_S11": 0.5597140223490741,
+      "meep_S21": 0.8287171994860604,
+      "meep_energy": 1.0000519835381985,
+      "openems_S11": 0.9867519395587419,
+      "openems_S21": 0.16483103190318243,
+      "openems_energy": 1.000848659301207
+    },
+    {
+      "name": "centered_slab",
+      "self_S11": 0.30807136488786674,
+      "self_S21": 0.9543991900353131,
+      "self_energy": 1.005785779803935,
+      "meep_S11": 0.03859736800675961,
+      "meep_S21": 0.9992591875812963,
+      "meep_energy": 1.0000086807826816,
+      "openems_S11": 0.15249912765179888,
+      "openems_S21": 0.9882984908633321,
+      "openems_energy": 0.9999898909772994
+    },
+    {
+      "name": "centered_post",
+      "self_S11": 0.3319627763390522,
+      "self_S21": 0.9470638788366083,
+      "self_energy": 1.0071292754717733,
+      "meep_S11": 0.2621333965451528,
+      "meep_S21": 0.9650375177823727,
+      "meep_energy": 1.0000113283118615,
+      "openems_S11": 0.2670537311843704,
+      "openems_S21": 0.9640986291300833,
+      "openems_energy": 1.00080386203
+    },
+    {
+      "name": "corner_block",
+      "self_S11": 0.3495985191544359,
+      "self_S21": 0.9411458085205777,
+      "self_energy": 1.0079745574908263,
+      "meep_S11": 0.10965193267959658,
+      "meep_S21": 0.9939909522070157,
+      "meep_energy": 1.0000415594097807,
+      "openems_S11": 0.992913036789598,
+      "openems_S21": 0.12522746463410314,
+      "openems_energy": 1.001558216525427
+    },
+    {
+      "name": "two_material",
+      "self_S11": 0.11008580843240436,
+      "self_S21": 0.9963026427478808,
+      "self_energy": 1.0047378411646275,
+      "meep_S11": 0.01856285495050247,
+      "meep_S21": 1.0000063615219956,
+      "meep_energy": 1.0003573026683736,
+      "openems_S11": 0.08078357600096536,
+      "openems_S21": 0.9970041736571125,
+      "openems_energy": 1.0005433084412054
+    },
+    {
+      "name": "grating",
+      "self_S11": 0.5347782963460075,
+      "self_S21": 0.8466334583662992,
+      "self_energy": 1.0027760390680185,
+      "meep_S11": 0.5488977433405615,
+      "meep_S21": 0.8359839142567563,
+      "meep_energy": 1.0001578375404088,
+      "openems_S11": 0.5779702883484644,
+      "openems_S21": 0.8160659473848788,
+      "openems_energy": 1.000013284694787
+    },
+    {
+      "name": "two_post",
+      "self_S11": 0.3318086059581525,
+      "self_S21": 0.9471175043459779,
+      "self_energy": 1.0071285180264458,
+      "meep_S11": 0.2630642635106309,
+      "meep_S21": 0.9647842350917498,
+      "meep_energy": 1.0000114270179634,
+      "openems_S11": 0.26926710168439427,
+      "openems_S21": 0.9632600104358421,
+      "openems_energy": 1.0003746197543726
+    }
+  ],
+  "throughput": {
+    "grid_mm": 0.5,
+    "n_cells": 230400,
+    "self_GPU": {
+      "device": "NVIDIA GeForce RTX 5060 Ti",
+      "median_MCells_s": 319.15,
+      "runs_MCells_s": [
+        314.47,
+        308.57,
+        323.83,
+        324.3
+      ],
+      "min": 308.57,
+      "max": 324.3,
+      "courant": 0.4044,
+      "dt_s": 6.74e-13
+    },
+    "MEEP_CPU": {
+      "version": "1.35.1 nompi (single core)",
+      "mean_MCells_s": 133.0456514369787,
+      "min": 117.26070650956348,
+      "max": 143.21661925588214,
+      "courant": 0.4044,
+      "dt_s": 6.74e-13
+    },
+    "openEMS_CPU_single_thread": {
+      "version": "0.37.0 MSVC (numThreads=1)",
+      "mean_MCells_s": 108.83916420057116,
+      "min": 102.49173181734416,
+      "max": 113.23612009556004,
+      "courant": 0.99,
+      "dt_s": 9.629166007732353e-13
+    },
+    "openEMS_context": {
+      "auto_tuned_default_0p5mm": {
+        "mean_MCells_s": 132.6757150178023,
+        "min": 107.2244953197492,
+        "max": 148.2827789389383,
+        "note": "Small 0.5 mm grid: auto-tuner selects a low thread count, so the default rate is close to single core."
+      },
+      "multithread_0p25mm": {
+        "mean_MCells_s": 300.50118111943993,
+        "min": 221.31418809598907,
+        "max": 379.68817414289083,
+        "note": "Larger 1.9 M-cell grid: auto-tuner uses 8-9 threads."
+      },
+      "msvc_note": "Upstream docs flag a known performance penalty in the MSVC build relative to the GCC build."
+    },
+    "speedup_vs_MEEP": 2.398800686478472,
+    "speedup_vs_openEMS_single": 2.9323084419489245
+  }
+}

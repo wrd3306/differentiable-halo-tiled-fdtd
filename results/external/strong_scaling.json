@@ -1,0 +1,86 @@
+{
+  "engine": "production L0 (engine3d + fdtd_gpu.step)",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "rows": [
+    {
+      "tag": "scale2_0.50mm",
+      "shape": [
+        48,
+        24,
+        200
+      ],
+      "cells": 230400,
+      "dt_s": 6.740416205412647e-13,
+      "timed_steps": 400,
+      "elapsed_s": 0.2909,
+      "mcells_s": 316.76,
+      "peak_mem_allocated_gb": 0.032,
+      "gpu_utilization_pct": 7.0,
+      "avg_power_w": 8.1,
+      "avg_graphics_clock_mhz": 285.0,
+      "nvsmi_mem_used_mib": 2126.0,
+      "full_record_steps": 14836,
+      "time_to_solution_s": 10.79
+    },
+    {
+      "tag": "scale4_0.25mm",
+      "shape": [
+        96,
+        48,
+        400
+      ],
+      "cells": 1843200,
+      "dt_s": 3.3702081027063236e-13,
+      "timed_steps": 400,
+      "elapsed_s": 0.9733,
+      "mcells_s": 757.54,
+      "peak_mem_allocated_gb": 0.254,
+      "gpu_utilization_pct": 55.6,
+      "avg_power_w": 53.3,
+      "avg_graphics_clock_mhz": 2758.0,
+      "nvsmi_mem_used_mib": 2470.0,
+      "full_record_steps": 14836,
+      "time_to_solution_s": 36.1
+    },
+    {
+      "tag": "scale8_0.125mm",
+      "shape": [
+        192,
+        96,
+        800
+      ],
+      "cells": 14745600,
+      "dt_s": 1.6851040513531618e-13,
+      "timed_steps": 400,
+      "elapsed_s": 13.6962,
+      "mcells_s": 430.65,
+      "peak_mem_allocated_gb": 2.032,
+      "gpu_utilization_pct": 99.9,
+      "avg_power_w": 90.8,
+      "avg_graphics_clock_mhz": 2797.0,
+      "nvsmi_mem_used_mib": 4364.0,
+      "full_record_steps": 14836,
+      "time_to_solution_s": 507.99
+    },
+    {
+      "tag": "scale12_0.083mm",
+      "shape": [
+        288,
+        144,
+        1200
+      ],
+      "cells": 49766400,
+      "dt_s": 1.1234027009021077e-13,
+      "timed_steps": 400,
+      "elapsed_s": 46.1813,
+      "mcells_s": 431.05,
+      "peak_mem_allocated_gb": 6.865,
+      "gpu_utilization_pct": 100.0,
+      "avg_power_w": 90.9,
+      "avg_graphics_clock_mhz": 2793.0,
+      "nvsmi_mem_used_mib": 9168.0,
+      "full_record_steps": 14836,
+      "time_to_solution_s": 1712.86
+    }
+  ]
+}

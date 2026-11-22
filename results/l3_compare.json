@@ -1,0 +1,96 @@
+{
+  "rows": [
+    {
+      "n": 32,
+      "cells": 32768,
+      "l0_time": 0.0304,
+      "l1_time": 0.0243,
+      "l3_time": 0.0017,
+      "l0_mcups": 64.7,
+      "l1_mcups": 80.8,
+      "l3_mcups": 1142.6,
+      "l3_vs_l0": 17.66,
+      "l3_vs_l1": 14.14,
+      "l3_floor_bw_gbs": 91.4
+    },
+    {
+      "n": 64,
+      "cells": 262144,
+      "l0_time": 0.0721,
+      "l1_time": 0.0334,
+      "l3_time": 0.0111,
+      "l0_mcups": 218.0,
+      "l1_mcups": 470.4,
+      "l3_mcups": 1414.0,
+      "l3_vs_l0": 6.49,
+      "l3_vs_l1": 3.01,
+      "l3_floor_bw_gbs": 113.1
+    },
+    {
+      "n": 96,
+      "cells": 884736,
+      "l0_time": 0.0967,
+      "l1_time": 0.0759,
+      "l3_time": 0.0461,
+      "l0_mcups": 548.9,
+      "l1_mcups": 699.4,
+      "l3_mcups": 1150.4,
+      "l3_vs_l0": 2.1,
+      "l3_vs_l1": 1.64,
+      "l3_floor_bw_gbs": 92.0
+    },
+    {
+      "n": 128,
+      "cells": 2097152,
+      "l0_time": 0.17,
+      "l1_time": 0.1355,
+      "l3_time": 0.1051,
+      "l0_mcups": 740.3,
+      "l1_mcups": 928.3,
+      "l3_mcups": 1196.8,
+      "l3_vs_l0": 1.62,
+      "l3_vs_l1": 1.29,
+      "l3_floor_bw_gbs": 95.7
+    },
+    {
+      "n": 160,
+      "cells": 4096000,
+      "l0_time": 0.4561,
+      "l1_time": 0.3416,
+      "l3_time": 0.5178,
+      "l0_mcups": 538.9,
+      "l1_mcups": 719.4,
+      "l3_mcups": 474.6,
+      "l3_vs_l0": 0.88,
+      "l3_vs_l1": 0.66,
+      "l3_floor_bw_gbs": 38.0
+    },
+    {
+      "n": 192,
+      "cells": 7077888,
+      "l0_time": 1.0071,
+      "l1_time": 0.8463,
+      "l3_time": 1.2018,
+      "l0_mcups": 421.7,
+      "l1_mcups": 501.8,
+      "l3_mcups": 353.4,
+      "l3_vs_l0": 0.84,
+      "l3_vs_l1": 0.7,
+      "l3_floor_bw_gbs": 28.3
+    },
+    {
+      "n": 224,
+      "cells": 11239424,
+      "l0_time": 1.6025,
+      "l1_time": 1.3571,
+      "l3_time": 1.9564,
+      "l0_mcups": 420.8,
+      "l1_mcups": 496.9,
+      "l3_mcups": 344.7,
+      "l3_vs_l0": 0.82,
+      "l3_vs_l1": 0.69,
+      "l3_floor_bw_gbs": 27.6
+    }
+  ],
+  "physics": "verified by verify_l3.py PASS"
+}

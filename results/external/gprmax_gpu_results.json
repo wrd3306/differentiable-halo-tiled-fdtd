@@ -1,0 +1,26 @@
+{
+  "solver": "gprMax 4.0.1 CUDA (pycuda 2026.1, JIT nvcc, single precision)",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "time_window_s": 1e-8,
+  "courant": "CFL limit (~1.0)",
+  "note": "Free-space domain with PML on all six faces and a hertzian dipole; cell-rate comparison against the waveguide engine (same field count, PML cells are a minority).",
+  "rows": [
+    {"tag": "scale2", "shape": [48, 24, 200], "cells": 230400,
+     "dt_s": 9.62917e-13, "iterations": 10387, "solve_s": 2.1185,
+     "device_mem_gb": 1.3, "mcells_s": 1129.65},
+    {"tag": "scale4", "shape": [96, 48, 400], "cells": 1843200,
+     "dt_s": 4.81458e-13, "iterations": 20772, "solve_s": 14.6289,
+     "device_mem_gb": 1.4, "mcells_s": 2617.21},
+    {"tag": "scale8", "shape": [192, 96, 800], "cells": 14745600,
+     "dt_s": 2.40729e-13, "iterations": 41542, "solve_s": 205.419,
+     "device_mem_gb": 2.1, "mcells_s": 2982.01},
+    {"tag": "scale12", "shape": [288, 144, 1200], "cells": 49766400,
+     "dt_s": 1.60486e-13, "iterations": 62312, "solve_s": 948.3067,
+     "device_mem_gb": 3.9, "mcells_s": 3270.09}
+  ],
+  "comparison": {
+    "gprmax_vs_self_L0_at_50M": "3270.09 / 431.05 = 7.59x",
+    "gprmax_vs_self_L3b_peak_1.90G": "3270.09 / 1897.8 = 1.72x",
+    "reason": "gprMax uses a fully fused single-kernel update with minimal DRAM traffic; the self L0 emits many separate elementwise kernels with temporary global arrays."
+  }
+}
