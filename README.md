@@ -1,5 +1,7 @@
 # Differentiable Halo-Tiled GPU FDTD for Waveguide and Photonic Devices
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24432106.svg)](https://doi.org/10.5281/zenodo.24432106)
+
 A memory-bounded, reverse-mode differentiable finite-difference time-domain
 (FDTD) solver for rectangular-waveguide and photonic components. The forward
 engine is a roofline-guided **halo-tiled shared-memory GPU kernel**; the
